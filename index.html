@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="bgforwebsite (1).mp4" type="video/mp4">
+    </video>
+
+    <div class="nav">
+        <a href="signinpg.html">Sign In</a>
+        <a href="Aboutuspg.html">About Us</a>
+    </div>
+
+    <div class="banner">
+        <h1>Welcome to the Recommendation Generator</h1>
+    </div>
+
+    <div class="logocontain">
+        <img src="logo.png" class="Logo" width="200">
+    </div>
+
+    <div class="dropdowns">
+        <form id="recommendationForm">
+            <select name="genre">
+                <option value="">Genre</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Rom-com">Rom-com</option>
+                <option value="Thrillers">Thrillers</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <select name="style">
+                <option value="">Style</option>
+                <option value="live-action">Live-action</option>
+                <option value="animated">Animation</option>
+                <option value="CGI">CGI</option>
+            </select>
+
+            <select name="format">
+                <option value="">Format</option>
+                <option value="movie">Movie</option>
+                <option value="tv">TV Show</option>
+            </select>
+
+            <button type="submit" class="generate-button">Generate Recommendations</button>
+        </form>
+    </div>
+
+    <div id="result" class="result-container"></div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
